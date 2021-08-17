@@ -2,7 +2,7 @@ import React from "react";
 import { createDrawerNavigator } from "@react-navigation/drawer";
 import { NavigationContainer } from "@react-navigation/native";
 import { NativeBaseProvider } from "native-base";
-import Home from "./screens/Home";
+import StarterIntro from "./screens/StarterIntro";
 /* Add Screen imports here */
 
 const Drawer = createDrawerNavigator();
@@ -15,7 +15,7 @@ export default function App() {
           initialRouteName="Home"
           screenOptions={{ headerShown: false }}
         >
-          <Drawer.Screen name={"Home"} component={Home} />
+          <Drawer.Screen name={"Starter intro"} component={StarterIntro} />
           {/* Add Screen components to Drawer here */}
         </Drawer.Navigator>
       </NavigationContainer>
